@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyric Stage Demo</title>
+    <link rel="stylesheet" href="./lyrics-stage-demo.css">
+</head>
+<body>
+    <main id="lyrics-stage" class="lyrics-stage" aria-label="Fullscreen lyric demo stage">
+        <div class="lyrics-stage__chrome">
+            <div class="provider-status" aria-live="polite">
+                <span id="provider-status-badge" class="provider-status__badge">LYRIC STAGE</span>
+                <p id="provider-status-hint" class="provider-status__hint">Connecting to the local lyric bridge…</p>
+            </div>
+            <div id="mode-switch-shell" class="mode-switch-shell">
+                <button
+                    id="mode-switch-toggle"
+                    type="button"
+                    class="mode-switch-toggle"
+                    aria-label="展开歌词显示模式"
+                    aria-expanded="false"
+                    aria-controls="mode-switch"
+                >
+                    <span class="mode-switch-toggle__icon" aria-hidden="true"></span>
+                </button>
+                <div id="mode-switch" class="mode-switch" role="group" aria-label="歌词显示模式" hidden>
+                    <button type="button" class="mode-switch__button" data-display-mode="word">逐词</button>
+                    <button type="button" class="mode-switch__button" data-display-mode="line">按行</button>
+                </div>
+            </div>
+        </div>
+
+        <aside id="timing-disclaimer" class="timing-disclaimer" hidden>
+            <p class="timing-disclaimer__copy">逐词歌词在部分歌曲中为模拟效果，并非真实同步。</p>
+            <div class="timing-disclaimer__actions">
+                <button type="button" class="timing-disclaimer__button timing-disclaimer__button--primary" data-disclaimer-action="dismiss">知道了</button>
+                <button type="button" class="timing-disclaimer__button" data-disclaimer-action="switch-line">切到按行</button>
+            </div>
+        </aside>
+
+        <div class="lyrics-stage__coverback" aria-hidden="true">
+            <img id="stage-cover-image" class="coverback__image" alt="">
+            <div class="coverback__wash"></div>
+        </div>
+        <div class="lyrics-stage__noise" aria-hidden="true"></div>
+        <div class="lyrics-stage__spotlight" aria-hidden="true"></div>
+        <div class="lyrics-stage__fog" aria-hidden="true">
+            <span class="stage-fog stage-fog--one"></span>
+            <span class="stage-fog stage-fog--two"></span>
+            <span class="stage-fog stage-fog--three"></span>
+            <span class="stage-fog stage-fog--four"></span>
+        </div>
+        <div class="lyrics-stage__aurora" aria-hidden="true">
+            <span class="aurora aurora--one"></span>
+            <span class="aurora aurora--two"></span>
+            <span class="aurora aurora--three"></span>
+        </div>
+
+        <section class="lyrics-stage__viewport">
+            <section id="stage-empty" class="lyrics-stage__empty" hidden aria-live="polite">
+                <div class="stage-empty__panel">
+                    <p id="stage-empty-title" class="stage-empty__title">等待歌词接入</p>
+                    <p id="stage-empty-hint" class="stage-empty__hint">播放一首歌后，这里会自动进入歌词舞台。</p>
+                </div>
+            </section>
+
+            <div class="line-shell line-shell--active">
+                <div class="line-shell__ornament line-shell__ornament--one" aria-hidden="true"></div>
+                <div class="line-shell__ornament line-shell__ornament--two" aria-hidden="true"></div>
+                <div id="line-current-glow" class="line-current line-current--glow" aria-hidden="true"></div>
+                <div id="line-current" class="line-current" aria-live="polite"></div>
+            </div>
+
+            <div class="line-shell line-shell--measure" aria-hidden="true">
+                <div id="line-measure" class="line-current line-current--measure"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./lyrics-stage-app.js"></script>
+    <script src="./lyrics-stage-demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "ncm-lyrics-stage",
+  "description": "A NetEase Cloud Music lyric-stage prototype with a local ncm-cli bridge and layout audit scripts.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "lyrics:demo": "node scripts/start-lyrics-demo.js",
+    "lyrics:demo:open": "node scripts/start-lyrics-demo.js --open",
+    "lyrics:bridge": "node scripts/ncm-cli-web-bridge.js",
+    "lyrics:audit": "node scripts/run-lyrics-layout-audit.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
