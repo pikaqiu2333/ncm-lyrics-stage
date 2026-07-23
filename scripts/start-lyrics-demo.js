@@ -98,7 +98,7 @@ async function main() {
     console.log(`Lyrics demo: ${DEMO_URL}`);
     console.log(`Bridge health: ${HEALTH_URL}`);
     console.log(`Mock showcase: ${DEMO_URL}?mode=mock&track=tiptoes-after-midnight`);
-    console.log(`Qing Hua Ci showcase: ${DEMO_URL}?mode=mock&track=qing-hua-ci`);
+    console.log(`Moonlit Echo showcase: ${DEMO_URL}?mode=mock&track=moonlit-echo`);
     console.log(`Logs: ${LOG_PATH}`);
 
     if (SHOULD_OPEN) {

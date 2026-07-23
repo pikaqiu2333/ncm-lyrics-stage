@@ -14,7 +14,7 @@ if (-not $browser) {
 $baseUrl = if ($env:LYRICS_AUDIT_BASE_URL) { $env:LYRICS_AUDIT_BASE_URL } else { "http://127.0.0.1:3210/" }
 $cases = @(
     @{ name = "Tiptoes After Midnight"; mode = "mock"; track = "tiptoes-after-midnight" },
-    @{ name = "Qing Hua Ci"; mode = "mock"; track = "qing-hua-ci" }
+    @{ name = "Moonlit Echo"; mode = "mock"; track = "moonlit-echo" }
 )
 
 function Get-AuditJson {
