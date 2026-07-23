@@ -10,7 +10,7 @@ const BASE_URL = process.env.LYRICS_AUDIT_BASE_URL || "http://127.0.0.1:3210/";
 const EXISTING_CDP_PORT = Number(process.env.LYRICS_AUDIT_CDP_PORT || 0);
 const CASES = [
     { name: "tiptoes-after-midnight", mode: "mock", track: "tiptoes-after-midnight" },
-    { name: "qing-hua-ci", mode: "mock", track: "qing-hua-ci" },
+    { name: "moonlit-echo", mode: "mock", track: "moonlit-echo" },
 ];
 
 function findBrowser() {

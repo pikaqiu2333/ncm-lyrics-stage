@@ -2,6 +2,8 @@
 
 `NCM Lyrics Stage` is a local-first product prototype that turns NetEase Cloud Music lyrics into a full-screen performance surface.
 
+**中文简介：** 一个本地优先的网易云音乐歌词舞台原型，将逐词 / 逐行歌词、播放状态与沉浸式全屏视觉融合在一起。
+
 ![NCM Lyrics Stage showcase](docs/showcase.png)
 
 It combines three parts:
@@ -65,7 +67,7 @@ After startup the bridge serves the app on `http://127.0.0.1:3210/` by default.
 
 - Live bridge mode: [http://127.0.0.1:3210/](http://127.0.0.1:3210/)
 - Built-in mock demo: [http://127.0.0.1:3210/?mode=mock&track=tiptoes-after-midnight](http://127.0.0.1:3210/?mode=mock&track=tiptoes-after-midnight)
-- Chinese lyric demo: [http://127.0.0.1:3210/?mode=mock&track=qing-hua-ci](http://127.0.0.1:3210/?mode=mock&track=qing-hua-ci)
+- Chinese lyric demo: [http://127.0.0.1:3210/?mode=mock&track=moonlit-echo](http://127.0.0.1:3210/?mode=mock&track=moonlit-echo)
 - Cached lyric preview example: `http://127.0.0.1:3210/?preview=1&songId=<netease-song-id>`
 
 ## Available Commands
