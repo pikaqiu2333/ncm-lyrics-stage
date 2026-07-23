@@ -1,8 +1,8 @@
 # NCM Lyrics Stage
 
-`NCM Lyrics Stage` is a local-first product prototype that turns NetEase Cloud Music lyrics into a full-screen performance surface.
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-**中文简介：** 一个本地优先的网易云音乐歌词舞台原型，将逐词 / 逐行歌词、播放状态与沉浸式全屏视觉融合在一起。
+`NCM Lyrics Stage` is a local-first product prototype that turns NetEase Cloud Music lyrics into a full-screen performance surface.
 
 ![NCM Lyrics Stage showcase](docs/showcase.png)
 
